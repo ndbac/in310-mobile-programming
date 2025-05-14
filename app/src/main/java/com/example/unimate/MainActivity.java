@@ -29,7 +29,40 @@ public class MainActivity extends AppCompatActivity {
             navigateToLogin();
         }
         
-        // Set up logout button click listener
+        // Set up click listeners for menu items
+        setupMenuListeners();
+    }
+    
+    private void setupMenuListeners() {
+        // Timer card click listener
+        binding.cardTimer.setOnClickListener(v -> {
+            Toast.makeText(this, "Timer feature coming soon", Toast.LENGTH_SHORT).show();
+            // Intent intent = new Intent(this, TimerActivity.class);
+            // startActivity(intent);
+        });
+        
+        // To-Do list card click listener
+        binding.cardTodo.setOnClickListener(v -> {
+            Toast.makeText(this, "To-Do List feature coming soon", Toast.LENGTH_SHORT).show();
+            // Intent intent = new Intent(this, TodoActivity.class);
+            // startActivity(intent);
+        });
+        
+        // Dictionary card click listener
+        binding.cardDictionary.setOnClickListener(v -> {
+            Toast.makeText(this, "Dictionary feature coming soon", Toast.LENGTH_SHORT).show();
+            // Intent intent = new Intent(this, DictionaryActivity.class);
+            // startActivity(intent);
+        });
+        
+        // Study Tracking card click listener
+        binding.cardStudyTracking.setOnClickListener(v -> {
+            Toast.makeText(this, "Study Tracking feature coming soon", Toast.LENGTH_SHORT).show();
+            // Intent intent = new Intent(this, StudyTrackingActivity.class);
+            // startActivity(intent);
+        });
+        
+        // Logout button click listener
         binding.btnLogout.setOnClickListener(v -> {
             Toast.makeText(this, "Logging out...", Toast.LENGTH_SHORT).show();
             logout();
