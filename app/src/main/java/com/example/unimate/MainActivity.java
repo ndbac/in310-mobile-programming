@@ -50,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         
         // Dictionary card click listener
         binding.cardDictionary.setOnClickListener(v -> {
-            Toast.makeText(this, "Dictionary feature coming soon", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(this, DictionaryActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, DictionaryActivity.class);
+            startActivity(intent);
         });
         
         // Study Tracking card click listener
