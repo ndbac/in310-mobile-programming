@@ -1,6 +1,7 @@
 package com.example.unimate;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -32,6 +33,10 @@ public class RegisterActivity extends AppCompatActivity {
             if (user != null) {
                 // User registered successfully
                 Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
+                
+                // Save current user in SharedPreferences
+                SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
+                prefs.edit().putString("current_user", user.getUsername()).apply();
                 
                 // Navigate to main activity
                 Intent intent = new Intent(this, MainActivity.class);

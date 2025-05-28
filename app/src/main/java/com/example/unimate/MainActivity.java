@@ -1,6 +1,7 @@
 package com.example.unimate;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -43,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
         
         // To-Do list card click listener
         binding.cardTodo.setOnClickListener(v -> {
-            Toast.makeText(this, "To-Do List feature coming soon", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(this, TodoActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, TodoActivity.class);
+            startActivity(intent);
         });
         
         // Dictionary card click listener
@@ -75,8 +75,9 @@ public class MainActivity extends AppCompatActivity {
     }
     
     private void logout() {
-        // Clear any saved login state if needed
-        // ...
+        // Clear saved login state
+        SharedPreferences prefs = getSharedPreferences("user_prefs", MODE_PRIVATE);
+        prefs.edit().clear().apply();
         
         // Navigate back to login screen
         navigateToLogin();
