@@ -37,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupMenuListeners() {
         // Timer card click listener
         binding.cardTimer.setOnClickListener(v -> {
-            Toast.makeText(this, "Timer feature coming soon", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(this, TimerActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, TimerActivity.class);
+            startActivity(intent);
         });
         
         // To-Do list card click listener
@@ -56,9 +55,8 @@ public class MainActivity extends AppCompatActivity {
         
         // Study Tracking card click listener
         binding.cardStudyTracking.setOnClickListener(v -> {
-            Toast.makeText(this, "Study Tracking feature coming soon", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(this, StudyTrackingActivity.class);
-            // startActivity(intent);
+            Intent intent = new Intent(this, StudyTrackingActivity.class);
+            startActivity(intent);
         });
         
         // Logout button click listener

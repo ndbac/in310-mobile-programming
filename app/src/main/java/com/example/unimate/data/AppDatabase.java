@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-@Database(entities = {User.class, TodoItem.class}, version = 2, exportSchema = false)
+@Database(entities = {User.class, TodoItem.class, Timer.class, StudySession.class}, version = 4, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     
     private static final String DATABASE_NAME = "unimate_db";
@@ -14,6 +14,8 @@ public abstract class AppDatabase extends RoomDatabase {
     
     public abstract UserDao userDao();
     public abstract TodoDao todoDao();
+    public abstract TimerDao timerDao();
+    public abstract StudySessionDao studySessionDao();
     
     public static synchronized AppDatabase getInstance(Context context) {
         if (instance == null) {
