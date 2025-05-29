@@ -211,17 +211,17 @@ public class StudyTrackingActivity extends AppCompatActivity implements
         switch (tab) {
             case SESSIONS:
                 layoutSessionsTab.setVisibility(View.VISIBLE);
-                btnTabSessions.setTextColor(getColor(R.color.purple_500));
+                btnTabSessions.setTextColor(getColor(R.color.black));
                 loadSessions();
                 break;
             case STATISTICS:
                 layoutStatisticsTab.setVisibility(View.VISIBLE);
-                btnTabStatistics.setTextColor(getColor(R.color.purple_500));
+                btnTabStatistics.setTextColor(getColor(R.color.black));
                 loadStatistics();
                 break;
             case SUBJECTS:
                 layoutSubjectsTab.setVisibility(View.VISIBLE);
-                btnTabSubjects.setTextColor(getColor(R.color.purple_500));
+                btnTabSubjects.setTextColor(getColor(R.color.black));
                 loadSubjects();
                 break;
         }
@@ -239,7 +239,7 @@ public class StudyTrackingActivity extends AppCompatActivity implements
         
         // Reset period button colors
         int defaultColor = getColor(android.R.color.darker_gray);
-        int selectedColor = getColor(R.color.purple_500);
+        int selectedColor = getColor(R.color.black);
         
         btnPeriodWeek.setTextColor(defaultColor);
         btnPeriodMonth.setTextColor(defaultColor);

@@ -68,7 +68,7 @@
                 android:text="8h 45m"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/purple_500" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"

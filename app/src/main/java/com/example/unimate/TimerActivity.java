@@ -145,13 +145,13 @@ public class TimerActivity extends AppCompatActivity implements TimerAdapter.OnT
         resetFilterButtonColors();
         switch (filterType) {
             case ALL:
-                btnAllTimers.setTextColor(getColor(R.color.purple_500));
+                btnAllTimers.setTextColor(getColor(R.color.black));
                 break;
             case ACTIVE:
-                btnActiveTimers.setTextColor(getColor(R.color.purple_500));
+                btnActiveTimers.setTextColor(getColor(R.color.black));
                 break;
             case COMPLETED:
-                btnCompletedTimers.setTextColor(getColor(R.color.purple_500));
+                btnCompletedTimers.setTextColor(getColor(R.color.black));
                 break;
         }
         

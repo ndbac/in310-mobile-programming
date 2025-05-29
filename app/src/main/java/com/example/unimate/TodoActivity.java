@@ -89,13 +89,13 @@ public class TodoActivity extends AppCompatActivity implements TodoAdapter.OnTod
         resetFilterButtonColors();
         switch (filterType) {
             case ALL:
-                btnAllTodos.setTextColor(getColor(R.color.purple_500));
+                btnAllTodos.setTextColor(getColor(R.color.black));
                 break;
             case ACTIVE:
-                btnActiveTodos.setTextColor(getColor(R.color.purple_500));
+                btnActiveTodos.setTextColor(getColor(R.color.black));
                 break;
             case COMPLETED:
-                btnCompletedTodos.setTextColor(getColor(R.color.purple_500));
+                btnCompletedTodos.setTextColor(getColor(R.color.black));
                 break;
         }
         

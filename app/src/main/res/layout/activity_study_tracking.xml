@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:background="@color/purple_500"
+        android:background="@color/black"
         android:elevation="4dp">
 
         <ImageButton
@@ -60,7 +60,7 @@
             android:layout_height="48dp"
             android:layout_weight="1"
             android:text="Sessions"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/black"
             android:background="?attr/selectableItemBackground"
             android:textAllCaps="false"
             style="?android:attr/borderlessButtonStyle" />
@@ -215,7 +215,7 @@
                                 android:text="0h 0m"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:textColor="@color/purple_500" />
+                                android:textColor="@color/black" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -250,7 +250,7 @@
                                 android:text="0"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
-                                android:textColor="@color/purple_500" />
+                                android:textColor="@color/black" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -295,7 +295,7 @@
                             android:numStars="5"
                             android:stepSize="0.1"
                             android:isIndicator="true"
-                            android:progressTint="@color/purple_500"
+                            android:progressTint="@color/black"
                             style="?android:attr/ratingBarStyleSmall" />
 
                         <TextView
@@ -345,7 +345,7 @@
                                 android:layout_weight="1"
                                 android:text="Week"
                                 android:textSize="12sp"
-                                android:textColor="@color/purple_500"
+                                android:textColor="@color/black"
                                 android:background="@drawable/button_outline"
                                 android:layout_marginEnd="4dp"
                                 android:textAllCaps="false" />
