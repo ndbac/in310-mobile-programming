@@ -1,0 +1,13 @@
+<!-- res/values-night/colors.xml -->
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grayLight">#D3D3D3</color>
+    <color name="grayDark">#EEEEEE</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorAccent">#AAAAAA</color>
+    <color name="colorError">#CF6679</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+</resources>
