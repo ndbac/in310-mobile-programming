@@ -1,9 +1,11 @@
+<!-- res/values/themes.xml -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.UniMate" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.UniMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/grayDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/grayLight</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
     </style>
-
-    <style name="Theme.UniMate" parent="Base.Theme.UniMate" />
 </resources>
